@@ -30,7 +30,7 @@ function Navbar() {
                     <a href="https://www.facebook.com">
                         <FaFacebookSquare size={20} className="hover:text-blue-600" />
                     </a>
-                    <a href="https://www.facebook.com">
+                    <a href="https://www.youtube.com">
                         <FaYoutubeSquare size={20} className="hover:text-red-600"/>
                     </a>
                 </div>
@@ -61,7 +61,7 @@ function Navbar() {
                     <a href="https://www.facebook.com">
                         <FaFacebookSquare size={20} className="hover:text-blue-600" />
                     </a>
-                    <a href="https://www.facebook.com">
+                    <a href="https://www.youtube.com">
                         <FaYoutubeSquare size={20} className="hover:text-red-600"/>
                     </a>
                 </div>

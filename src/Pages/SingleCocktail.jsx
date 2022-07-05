@@ -84,12 +84,12 @@ function SingleCocktail() {
           } = cocktail
           return (
             <section className="flex flex-col items-center justify-center pt-8">
-                <Link to="/">
-                    <button className="btn">Back Home</button>
+               <Link to="/">
+                    <button className="btn bg-green-900">Back Home</button>
                 </Link>
-                <h2 className='text-2xl py-12 tracking-widest font-bold'>{name}</h2>
+                <h2 className='text-4xl py-12 tracking-widest font-bold'>{name}</h2>
                 {/* Image and Info Container */}
-                <div className='flex flex-col justify-center w-2/3 md:flex-row'>
+                <div className='flex flex-col justify-center w-2/3 md:flex-row p-3'>
                     <img src={image} alt={name} className=" w-10/11 md:w-1/3 h-1/3 rounded-lg shadow-lg"></img>
                     <div className='space-y-4 my-8 md:-my-2 md:pl-8 w-full md:w-1/2 md:h-1/2'>
                         <p className="text-2xl text-gray-600 underline">
@@ -115,6 +115,7 @@ function SingleCocktail() {
                         </p>
                     </div>
                 </div>
+                
             </section>
           )}
 }
