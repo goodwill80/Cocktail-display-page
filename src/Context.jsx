@@ -5,8 +5,18 @@ const AppContext = createContext();
 
 function AppContextProvider({ children }) {
     const [ loading, setLoading ] = useState(false);
+    const [ sideBarOpen, setSideBarOpen ] = useState(false);
+
+    const openSideBar = ()=> {
+        setSideBarOpen(true);
+    }
+
+    const closeSideBar = ()=> {
+        setSideBarOpen(false);
+    }
+
   return (
-    <AppContext.Provider value={{}}>
+    <AppContext.Provider value={{sideBarOpen, openSideBar, closeSideBar}}>
       { children }
     </AppContext.Provider>
   )
