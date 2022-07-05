@@ -46,18 +46,18 @@ function Navbar() {
             </div>
              {/* Sidebar */}
              <div className={sideBarOpen ? `${sideBarStyle}` : "hidden -translate-x-full ease-out duration-300"}>
-                <li>
+                <li onClick={closeSideBar}>
                     <Link className="font-bold hover:pl-1 hover:text-green-400 hover:underline" to="/">Home</Link>
                 </li>
-               <li>
+               <li onClick={closeSideBar}>
                     <Link className="font-bold hover:pl-1 hover:text-green-400 hover:underline" to="/about">About Us</Link>
                </li>
-                <li>
+                <li onClick={closeSideBar}>
                     <Link className="font-bold hover:pl-1 hover:text-green-400 hover:underline" to="/contact">Contact Us</Link>
                 </li>
                 {/* Social Icons */}
                 <h1 className="text-xl font-bold text-gray-600 pt-12">Visit us at:</h1>
-                <div className="flex space-x-2 items-center pr-12">
+                <div className="flex space-x-2 items-center pr-12" onClick={closeSideBar}>
                     <a href="https://www.facebook.com">
                         <FaFacebookSquare size={20} className="hover:text-blue-600" />
                     </a>
