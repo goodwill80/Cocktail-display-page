@@ -13,7 +13,7 @@ function CocktailList() {
     return <h2 className="pt-4">No cocktail matched your search criteria</h2>
   }
   return (
-    <div className="pt-16">
+    <div className="pt-16 pb-4">
       <h1 className="text-2xl tracking-widest font-bold text-center">Cocktails</h1>
       {/* Container */}
       <div className="grid grid-cols-1 text-center gap-4 pt-4 px-4 space-x-4 
